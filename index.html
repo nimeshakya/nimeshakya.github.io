@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a56ae4d0c3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <!-- Welcome Page -->
+    <section id="welcome-page">
+      <nav class="navbar">
+        <ul class="navigation center">
+          <li class="nav-list"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-list">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-list">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="social-media center">
+          <li class="social-list">
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-list">
+            <a href="#" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="welcome-container center" id="about">
+        <div class="welcome-texts">
+          <h1 class="page-title welcome-page-title">Hey! I'm Nimesh.</h1>
+          <p class="my-description">I'm a Web Developer.</p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Welcome Page -->
+
+    <!-- Projects -->
+    <section id="projects" class="center">
+      <h2 class="page-title project-page-title">Projects</h2>
+
+      <div class="projects-container center">
+        <div class="project-container">
+          <div class="project">
+            <img
+              src="./Images/Timer.png"
+              class="project-img"
+              alt="Simple Timer"
+            />
+            <h3 class="project-title">Timer App</h3>
+          </div>
+          <div class="visit-option center">
+            <a
+              href="./Timer/index.html"
+              class="project-link-button center"
+              target="_blank"
+              >Visit</a
+            >
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project">
+            <img
+              src="./Images/Stopwatch.png"
+              class="project-img"
+              alt="Man playing acoustic guitar"
+            />
+            <h3 class="project-title">Stopwatch App</h3>
+            <div class="visit-option center">
+              <a
+                href="./Stopwatch/index.html"
+                class="project-link-button center"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project">
+            <img
+              src="./Images/Laptop Landing.png"
+              class="project-img"
+              alt="Crowd in a concert"
+            />
+            <h3 class="project-title">Survey Form</h3>
+            <div class="visit-option center">
+              <a
+                href="./Laptop Landing Page/index.html"
+                class="project-link-button center"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://codepen.io/nimeshakya/pens/"
+        target="_blank"
+        class="codepen-link center"
+        >Show All</a
+      >
+    </section>
+    <!-- End of Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-container center">
+        <h2 class="contact-heading">Contact Me</h2>
+        <div class="contact-collection center">
+          <a
+            href="https://www.facebook.com/nimeshakya666"
+            target="_blank"
+            class="contact-selection"
+          >
+            <i class="fab fa-facebook contact-icon"></i>
+            <p class="contact-option">facebook</p>
+          </a>
+
+          <a
+            href="https://www.instagram.com/nimeshakya/"
+            target="_blank"
+            class="contact-selection"
+          >
+            <i class="fab fa-instagram contact-icon"></i>
+            <p class="contact-option">Instagram</p>
+          </a>
+
+          <a
+            href="https://twitter.com/nimeshakya"
+            target="_blank"
+            class="contact-selection"
+          >
+            <i class="fab fa-twitter contact-icon"></i>
+            <p class="contact-option">twitter</p>
+          </a>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nimeshakyabtw@gmail.com"
+            target="_blank"
+            id="profile-link"
+            class="contact-selection"
+          >
+            <i class="fas fa-envelope contact-icon"></i>
+            <p class="contact-option">email</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-container center">
+        <p class="footer-text">copyright&copy;2021</p>
+      </div>
+    </section>
+    <!-- End of Footer -->
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
