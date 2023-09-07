@@ -1,0 +1,42 @@
+@use '../../variables';
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: variables.$bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    z-index: 100;
+
+    ul {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    nav {
+        width: 300px;
+        box-shadow: 5px 0 10px variables.$accent-color;
+
+        &.visible {
+            left: 0;
+        }
+
+        &.hidden {
+            left: -310px;
+        }
+
+        ul {
+            width: 100%;
+            align-content: center;
+        }
+    }
+}
