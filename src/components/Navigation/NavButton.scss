@@ -1,5 +1,5 @@
 @use '../../variables';
-li {
+.navBtns {
     margin: 15px 0;
 
     a {
@@ -37,7 +37,7 @@ li {
 }
 
 @media screen and (max-width: 990px) {
-    li {
+    .navBtns {
         width: 100%;
         a {
             width: 100%;

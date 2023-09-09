@@ -4,7 +4,7 @@ import './NavButton.scss';
 
 const NavButton = ({ name, icon }) => {
     return (
-        <li>
+        <li className='navBtns'>
             <a href={`#${name}`}>
                 {icon}
                 <span>{name}</span>

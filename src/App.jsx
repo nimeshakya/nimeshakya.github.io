@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import { HiOutlineMenu } from 'react-icons/hi';
+
 import Navigation from './components/Navigation/Navigation';
+import Home from './sections/Home/Home';
 
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
@@ -16,6 +18,7 @@ const App = () => {
                 {toggleNav ? <MdClose /> : <HiOutlineMenu />}
             </div>
             <Navigation toggleNav={toggleNav} />
+            <Home />
         </>
     );
 };
