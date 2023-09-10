@@ -1,0 +1,16 @@
+@use '../../variables';
+
+#underline {
+    width: 120px;
+    height: 4px;
+    background-color: variables.$accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: variables.$primary-color;
+        height: 100%;
+        width: 40px;
+    }
+}

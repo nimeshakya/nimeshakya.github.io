@@ -1,0 +1,66 @@
+@use '../../variables';
+
+#about {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px 0 100px;
+    text-align: center;
+    color: variables.$text-color;
+    margin: auto;
+
+    h1 {
+        font-size: 2.2rem;
+        font-family: variables.$font-raleway;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-top: 25px;
+        font-family: variables.$font-open-sans;
+        font-weight: 400;
+    }
+
+    .description-container {
+        margin: 25px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        img {
+            width: 300px;
+            min-width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .description-texts {
+            min-width: 50%;
+            text-align: left;
+            margin-left: 25px;
+
+            h2 {
+                font-size: 1.8rem;
+                font-family: variables.$font-raleway;
+                color: variables.$secondary-color;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+
+            .description-lists {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+        }
+    }
+}

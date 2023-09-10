@@ -1,0 +1,27 @@
+@use '../../variables';
+
+#descriptionItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: variables.$font-open-sans;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) {
+            color: variables.$primary-color;
+        }
+
+        &:nth-child(2) {
+            text-transform: capitalize;
+            font-weight: bolder;
+            color: variables.$text-darker-color;
+            margin: 0 5px;
+        }
+    }
+}
