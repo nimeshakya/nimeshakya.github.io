@@ -5,6 +5,7 @@ import { HiOutlineMenu } from 'react-icons/hi';
 import Navigation from './components/Navigation/Navigation';
 import Home from './sections/Home/Home';
 import About from './sections/About/About';
+import Portfolio from './sections/Portfolio/Portfolio';
 
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
             <Navigation toggleNav={toggleNav} />
             <Home />
             <About />
+            <Portfolio />
         </>
     );
 };

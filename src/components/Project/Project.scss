@@ -1,0 +1,49 @@
+@use '../../variables';
+
+.project-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        .project-description-container {
+            text-align: left;
+            position: absolute;
+            left: 0;
+            width: 50%;
+
+            .project-description {
+                text-align: left;
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row;
+        .project-description-container {
+            text-align: right;
+            position: absolute;
+            right: 0;
+            width: 50%;
+
+            .project-description {
+                text-align: right;
+            }
+        }
+    }
+
+    .project-description-container {
+        .project-description {
+            background-color: variables.$accent-color;
+            padding: 10px 20px 30px 20px;
+        }
+    }
+
+    img {
+        max-height: 350px;
+    }
+}

@@ -1,0 +1,42 @@
+@use '../../variables';
+
+#portfolio {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px 0 100px;
+    text-align: center;
+    color: variables.$text-color;
+    margin: 75px auto;
+
+    h1 {
+        font-size: 2.2rem;
+        font-family: variables.$font-raleway;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-top: 25px;
+        font-family: variables.$font-open-sans;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    article {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #portfolio {
+        padding: 0 100px;
+    }
+}
