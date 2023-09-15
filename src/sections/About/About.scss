@@ -12,54 +12,97 @@
     color: variables.$text-color;
     margin: auto;
 
-    h1 {
-        font-size: 2.2rem;
-        font-family: variables.$font-raleway;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-    }
-
-    p {
-        margin-top: 25px;
-        font-family: variables.$font-open-sans;
-        font-weight: 400;
-    }
-
-    .description-container {
-        margin: 25px 0;
+    article {
         width: 100%;
+        height: 100%;
+        margin: 75px 0;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-
-        img {
-            width: 300px;
-            min-width: 300px;
-            height: 300px;
-            object-fit: cover;
+        align-items: center;
+        flex-direction: column;
+        .article-heading {
+            font-size: 2.2rem;
+            font-family: variables.$font-raleway;
+            text-transform: uppercase;
+            margin-bottom: 15px;
         }
 
-        .description-texts {
-            min-width: 50%;
-            text-align: left;
-            margin-left: 25px;
+        p {
+            margin-top: 25px;
+            font-family: variables.$font-open-sans;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
 
-            h2 {
-                font-size: 1.8rem;
-                font-family: variables.$font-raleway;
-                color: variables.$secondary-color;
+        .description-container {
+            margin: 40px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            img {
+                width: 300px;
+                min-width: 300px;
+                height: 300px;
+                object-fit: cover;
             }
 
-            p {
-                margin-top: 10px;
-            }
+            .description-texts {
+                min-width: 50%;
+                max-width: 60%;
+                text-align: left;
+                margin-left: 25px;
 
-            .description-lists {
-                display: flex;
-                justify-content: space-between;
+                h2 {
+                    font-size: 1.8rem;
+                    font-family: variables.$font-raleway;
+                    color: variables.$secondary-color;
+                }
+
+                p {
+                    margin-top: 10px;
+                }
+
+                .description-lists {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #about {
+        padding: 0 100px;
+
+        article {
+            .description-container {
+                width: 100%;
+                flex-direction: column;
                 align-items: center;
-                flex-wrap: wrap;
-                margin: 0;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                }
+
+                .description-texts {
+                    min-width: 100%;
+                    margin: 0;
+
+                    .description-lists {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                }
             }
         }
     }

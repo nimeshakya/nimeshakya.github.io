@@ -2,7 +2,7 @@ import React from 'react';
 
 import './UnderLine.scss';
 
-const UnderLIne = () => {
+const UnderLine = () => {
     return (
         <div id='underline'>
             <div></div>
@@ -10,4 +10,4 @@ const UnderLIne = () => {
     );
 };
 
-export default UnderLIne;
+export default UnderLine;
