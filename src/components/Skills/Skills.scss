@@ -1,0 +1,62 @@
+@use '../../variables';
+
+#skills {
+    ul {
+        width: 90%;
+        max-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        li {
+            width: 25%;
+            flex: 25%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            font-family: variables.$font-montserrat;
+
+            span {
+                &:nth-child(1) {
+                    color: variables.$primary-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &:nth-child(2) {
+                    color: variables.$text-darker-color;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #skills {
+        ul {
+            li {
+                width: 50%;
+                flex: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #skills {
+        ul {
+            flex-wrap: nowrap;
+            max-height: none;
+            li {
+                width: 100%;
+                flex: 100%;
+            }
+        }
+    }
+}
