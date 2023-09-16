@@ -9,19 +9,21 @@ const Project = ({ project }) => {
     console.log(project);
     return (
         <div className='project-container'>
-            <img src={project.image} alt='project img' />
+            <a href={project.link} target='_blank' className='image-link'>
+                <img src={project.image} alt='project img' />
+            </a>
             <div className='project-description-container'>
-                <p>Featured Project</p>
+                <p className='project-text'>Featured Project</p>
                 <h4>{project.name}</h4>
                 <div className='project-description'>
                     <p>{project.description}</p>
                 </div>
-                <p>
+                <p className='project-text'>
                     {project.techUsed.map((tech, index) => {
                         return <span key={index}>{tech}</span>;
                     })}
                 </p>
-                <p>
+                <p className='project-links'>
                     <a href={project.github}>
                         <BiLogoGithub />
                     </a>

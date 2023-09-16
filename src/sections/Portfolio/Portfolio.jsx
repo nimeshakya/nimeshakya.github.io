@@ -54,7 +54,7 @@ const Portfolio = () => {
         <section id='portfolio'>
             <h1 className='article-heading'>Portfolio</h1>
             <UnderLine />
-            <p>
+            <p className='section-description'>
                 Here are some of the projects that I've built using the
                 technologies I've learnt over time.
             </p>

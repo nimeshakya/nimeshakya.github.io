@@ -14,10 +14,25 @@
             text-align: left;
             position: absolute;
             left: 0;
-            width: 50%;
+
+            .project-text {
+                &:nth-child(4) {
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+            }
 
             .project-description {
                 text-align: left;
+            }
+
+            .project-links {
+                margin-top: 20px;
+
+                a {
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -28,22 +43,148 @@
             text-align: right;
             position: absolute;
             right: 0;
-            width: 50%;
+
+            .project-text {
+                &:nth-child(4) {
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+            }
 
             .project-description {
                 text-align: right;
+            }
+
+            .project-links {
+                margin-top: 20px;
+                a {
+                    margin-left: 20px;
+                }
             }
         }
     }
 
     .project-description-container {
+        width: 50%;
+        max-width: 50%;
+        .project-text {
+            &:nth-child(1) {
+                font-family: variables.$font-montserrat;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+
+            &:nth-child(4) {
+                font-size: 0.9rem;
+                font-family: variables.$font-open-sans;
+                color: variables.$text-color;
+            }
+        }
+
+        h4 {
+            text-transform: capitalize;
+            font-family: variables.$font-open-sans;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
         .project-description {
+            margin: 20px 0;
             background-color: variables.$accent-color;
-            padding: 10px 20px 30px 20px;
+            padding: 30px 20px 30px 20px;
+
+            p {
+                font-family: variables.$font-open-sans;
+                font-size: 0.9rem;
+            }
+        }
+
+        .project-links {
+            font-size: 1.8rem;
+
+            a {
+                color: variables.$text-color;
+            }
         }
     }
 
     img {
+        width: 100%;
+        height: auto;
         max-height: 350px;
+        filter: saturate(0);
+        transition: filter 0.2s linear;
+
+        &:hover {
+            cursor: pointer;
+            filter: saturate(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .project-container {
+        width: 100%;
+        min-height: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-height: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(odd) {
+            .project-description-container {
+                text-align: left;
+
+                .project-description {
+                    text-align: left;
+                }
+
+                .project-text {
+                    &:nth-child(4) {
+                        span {
+                            margin: 0 20px 0 0;
+                        }
+                    }
+                }
+
+                .project-links {
+                    a {
+                        margin: 0 20px 0 0;
+                    }
+                }
+            }
+        }
+
+        .project-description-container {
+            width: 100%;
+            max-width: 100%;
+            position: relative !important;
+            padding: 30px;
+            background-color: #f2f3f5d9;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .project-description {
+                text-align: left;
+                background: none;
+                padding: 0;
+            }
+        }
     }
 }
