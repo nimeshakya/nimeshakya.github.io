@@ -1,6 +1,6 @@
 @use '../../variables';
 
-#portfolio {
+#resume {
     width: 100%;
     max-width: 1440px;
     display: flex;
@@ -19,36 +19,48 @@
         margin: 75px 0 15px 0;
     }
 
-    .section-description {
+    .resume-description {
         margin-top: 25px;
         font-family: variables.$font-open-sans;
         font-weight: 400;
         font-size: 1.2rem;
+
+        a {
+            color: variables.$primary-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     article {
         width: 100%;
+        margin-top: 30px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-}
+        align-items: flex-start;
+        flex-wrap: wrap;
 
-@media screen and (min-width: 1440px) {
-    #portfolio {
-        padding: 0;
+        .resume-cols {
+            width: 50%;
+            text-align: left;
+            flex: 50% !important;
+        }
     }
 }
 
 @media screen and (max-width: 990px) {
-    #portfolio {
+    #resume {
         padding: 0 100px;
-    }
-}
 
-@media screen and (max-width: 630px) {
-    #portfolio {
-        padding: 0 50px;
+        article {
+            flex-direction: column;
+            align-items: center;
+
+            .resume-cols {
+                width: 80%;
+            }
+        }
     }
 }

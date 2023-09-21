@@ -1,0 +1,10 @@
+@use '../../variables';
+.resume-item {
+    margin-bottom: 20px;
+
+    h2 {
+        text-transform: capitalize;
+        font-family: variables.$font-montserrat;
+        margin-bottom: 10px;
+    }
+}

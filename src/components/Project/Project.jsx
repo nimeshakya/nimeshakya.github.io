@@ -6,7 +6,6 @@ import projectImg from '../../images/quotes.png';
 import './Project.scss';
 
 const Project = ({ project }) => {
-    console.log(project);
     return (
         <div className='project-container'>
             <a href={project.link} target='_blank' className='image-link'>

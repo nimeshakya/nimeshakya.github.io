@@ -51,8 +51,8 @@ const Portfolio = () => {
     ];
 
     return (
-        <section id='portfolio'>
-            <h1 className='article-heading'>Portfolio</h1>
+        <section id='portfolio' className='sections'>
+            <h1 className='article-heading section-heading'>Portfolio</h1>
             <UnderLine />
             <p className='section-description'>
                 Here are some of the projects that I've built using the
@@ -61,7 +61,7 @@ const Portfolio = () => {
             <article>
                 {
                     projects.map((project, index) => {
-                        return <Project project={...project} />
+                        return <Project key={index} project={...project} />
                     })
                 }
             </article>

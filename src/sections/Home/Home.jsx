@@ -36,7 +36,7 @@ const Home = () => {
                 <ul>
                     {socialLinks.map((socialLink, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <a href={socialLink.link}>{socialLink.icon}</a>
                             </li>
                         );

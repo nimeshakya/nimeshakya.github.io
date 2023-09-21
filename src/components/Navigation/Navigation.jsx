@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiHome, BiUser, BiBookContent, BiServer } from 'react-icons/bi';
-import { MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineEmail, MdOutlineInsertDriveFile } from 'react-icons/md';
 
 import NavButton from './NavButton';
 
@@ -17,11 +17,15 @@ const Navigation = ({ toggleNav }) => {
             icon: <BiUser />,
         },
         {
+            name: 'resume',
+            icon: <MdOutlineInsertDriveFile />,
+        },
+        {
             name: 'portfolio',
             icon: <BiBookContent />,
         },
         {
-            name: 'service',
+            name: 'services',
             icon: <BiServer />,
         },
         {
@@ -34,7 +38,13 @@ const Navigation = ({ toggleNav }) => {
         <nav className={toggleNav ? 'visible' : 'hidden'}>
             <ul>
                 {navButtons.map((button, index) => {
-                    return <NavButton name={button.name} icon={button.icon} />;
+                    return (
+                        <NavButton
+                            key={index}
+                            name={button.name}
+                            icon={button.icon}
+                        />
+                    );
                 })}
             </ul>
         </nav>

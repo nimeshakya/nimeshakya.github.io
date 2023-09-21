@@ -41,7 +41,7 @@ const About = () => {
     ];
 
     return (
-        <section id='about'>
+        <section id='about' className='sections'>
             <article>
                 <h1 className='article-heading'>About</h1>
                 <UnderLine />

@@ -27,7 +27,7 @@ const Skills = () => {
             <ul>
                 {skills.map((skill, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             <span>
                                 <RxTriangleRight />
                             </span>
