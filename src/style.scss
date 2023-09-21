@@ -9,6 +9,10 @@
     outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #navToggleBtn {
     position: fixed;
     top: 10px;
