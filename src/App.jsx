@@ -7,6 +7,7 @@ import Home from './sections/Home/Home';
 import About from './sections/About/About';
 import Resume from './sections/Resume/Resume';
 import Portfolio from './sections/Portfolio/Portfolio';
+import Contact from './sections/Contact/Contact';
 
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
             <About />
             <Resume />
             <Portfolio />
+            <Contact />
         </>
     );
 };

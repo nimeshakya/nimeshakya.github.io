@@ -25,10 +25,6 @@ const Navigation = ({ toggleNav }) => {
             icon: <BiBookContent />,
         },
         {
-            name: 'services',
-            icon: <BiServer />,
-        },
-        {
             name: 'contact',
             icon: <MdOutlineEmail />,
         },

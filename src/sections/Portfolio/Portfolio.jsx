@@ -65,6 +65,9 @@ const Portfolio = () => {
                     })
                 }
             </article>
+            <p className='section-description'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim ullam, magnam quam exercitationem vitae suscipit mollitia debitis culpa voluptatibus id odio ab aspernatur.
+            </p>
         </section>
     );
 };
