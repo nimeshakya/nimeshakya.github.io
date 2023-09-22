@@ -1,0 +1,25 @@
+@use '../../variables';
+
+#footer {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px 20px 175px;
+    text-align: center;
+    color: variables.$text-color;
+    margin: 75px auto 20px auto;
+
+    a {
+        font-size: 15px;
+        font-family: variables.$font-montserrat;
+        font-weight: 600;
+        color: variables.$text-color;
+
+        &:hover {
+            color: variables.$primary-color;
+        }
+    }
+}

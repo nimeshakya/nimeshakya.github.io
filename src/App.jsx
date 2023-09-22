@@ -8,6 +8,7 @@ import About from './sections/About/About';
 import Resume from './sections/Resume/Resume';
 import Portfolio from './sections/Portfolio/Portfolio';
 import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
             <Resume />
             <Portfolio />
             <Contact />
+            <Footer />
         </>
     );
 };
