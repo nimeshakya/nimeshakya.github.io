@@ -10,7 +10,7 @@ const Footer = () => {
                 target='_blank'
                 rel='noreferrer'
             >
-                Designed ♦ Developed by Nimesh Shakya
+                Designed + Developed by Nimesh Shakya
             </a>
         </section>
     );
