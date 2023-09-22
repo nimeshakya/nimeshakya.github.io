@@ -64,10 +64,10 @@ const Portfolio = () => {
                         return <Project key={index} project={...project} />
                     })
                 }
+                <p className='section-description'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim ullam, magnam quam exercitationem vitae suscipit mollitia debitis culpa voluptatibus id odio ab aspernatur.
+                </p>
             </article>
-            <p className='section-description'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim ullam, magnam quam exercitationem vitae suscipit mollitia debitis culpa voluptatibus id odio ab aspernatur.
-            </p>
         </section>
     );
 };

@@ -34,16 +34,9 @@
         flex-direction: column;
     }
 }
-
-@media screen and (min-width: 1440px) {
-    #portfolio {
-        padding: 0;
-    }
-}
-
 @media screen and (max-width: 990px) {
     #portfolio {
-        padding: 0 100px;
+        padding: 0 175px;
     }
 }
 
