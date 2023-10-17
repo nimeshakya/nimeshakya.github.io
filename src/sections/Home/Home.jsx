@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import {
     BiLogoLinkedin,
     BiLogoInstagram,
@@ -7,7 +9,7 @@ import {
 
 import './Home.scss';
 
-const Home = () => {
+const Home = ({ addMultiRef }) => {
     const socialLinks = [
         {
             name: 'instagram',
