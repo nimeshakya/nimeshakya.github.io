@@ -31,7 +31,7 @@ const Home = ({ addMultiRef }) => {
     return (
         <section id='home'>
             <article>
-                <h1>Nimesh Shakya</h1>
+                <h1>Nimesh Bahadur</h1>
                 <p>
                     I'm <span>Frontend Developer</span>
                 </p>
