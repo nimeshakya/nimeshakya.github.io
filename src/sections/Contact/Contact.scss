@@ -41,6 +41,23 @@
             }
         }
 
+        .contact-hello-btn {
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            background-color: variables.$bg-color;
+            border: 3px solid variables.$secondary-color;
+            margin: 20px 0;
+            color: variables.$text-color;
+            font-family: variables.$font-montserrat;
+            font-weight: 500;
+
+            &:hover {
+                cursor: pointer;
+                background-color: variables.$secondary-color;
+                color: variables.$bg-color;
+            }
+        }
+
         .contact-links {
             width: 70%;
             display: flex;
@@ -64,12 +81,12 @@
                         &:nth-child(1) {
                             font-size: 2rem;
                             color: variables.$primary-color;
-                            width: 50px;
-                            height: 50px;
+                            padding: 10px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             border-radius: 50%;
+                            margin-bottom: 5px;
                             transition: background-color 0.2s linear,
                                 color 0.2s linear;
                         }
