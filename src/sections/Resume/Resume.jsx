@@ -6,7 +6,7 @@ import ResumePDF from '../../download-files/resume.pdf';
 
 import './Resume.scss';
 
-const Resume = () => {
+const Resume = ({ refResume }) => {
     const resumeItems1 = [
         {
             title: 'summary',
@@ -79,7 +79,7 @@ const Resume = () => {
     ];
 
     return (
-        <section id='resume'>
+        <section id='resume' ref={refResume}>
             <h1 className='section-heading'>Resume</h1>
             <UnderLine />
             <p className='resume-description'>

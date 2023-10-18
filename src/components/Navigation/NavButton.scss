@@ -12,14 +12,26 @@
         color: variables.$text-color;
         font-size: 1.5rem;
         font-family: variables.$font-montserrat;
-        transition: width 0.2s ease-in-out, background-color 0.2s linear,
-            color 0.2s linear;
+        transition: width 0.4s ease-in-out, background-color 0.4s linear,
+            color 0.4s linear;
 
         span {
             display: none;
             text-transform: capitalize;
             font-size: 1rem;
             margin-left: 10px;
+        }
+
+        &.isActive {
+            background-color: variables.$primary-color;
+            color: variables.$bg-color;
+            width: auto;
+            border-radius: 50px;
+            padding-right: 20px;
+
+            span {
+                display: inline;
+            }
         }
 
         &:hover {

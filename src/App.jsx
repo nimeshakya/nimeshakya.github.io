@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, createRef } from 'react';
 import { MdClose } from 'react-icons/md';
 import { HiOutlineMenu } from 'react-icons/hi';
 
@@ -13,6 +13,15 @@ import Footer from './sections/Footer/Footer';
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
 
+    const sections = [
+        'sectionHome',
+        'sectionAbout',
+        'sectionResume',
+        'sectionPortfolio',
+        'sectionContact',
+    ];
+    const refs = useRef(sections.map(() => React.createRef()));
+
     return (
         <>
             <div
@@ -22,12 +31,12 @@ const App = () => {
             >
                 {toggleNav ? <MdClose /> : <HiOutlineMenu />}
             </div>
-            <Navigation toggleNav={toggleNav} />
-            <Home />
-            <About />
-            <Resume />
-            <Portfolio />
-            <Contact />
+            <Navigation toggleNav={toggleNav} refs={refs} />
+            <Home refHome={refs.current[0]} />
+            <About refAbout={refs.current[1]} />
+            <Resume refResume={refs.current[2]} />
+            <Portfolio refPortfolio={refs.current[3]} />
+            <Contact refContact={refs.current[4]} />
             <Footer />
         </>
     );

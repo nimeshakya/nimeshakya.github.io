@@ -10,7 +10,7 @@ import UnderLine from '../../components/UnderLine/UnderLine';
 
 import './Contact.scss';
 
-const Contact = () => {
+const Contact = ({ refContact }) => {
     const contactLinks = [
         {
             name: 'email',
@@ -34,16 +34,8 @@ const Contact = () => {
         },
     ];
     return (
-        <section id='contact'>
-            <h1
-                className='section-heading'
-                ref={(el) => {
-                    if (!el) return;
-                    console.log(el.getBoundingClientRect().y);
-                }}
-            >
-                Contact
-            </h1>
+        <section id='contact' ref={refContact}>
+            <h1 className='section-heading'>Contact</h1>
             <UnderLine />
 
             <div className='contact-info-container'>

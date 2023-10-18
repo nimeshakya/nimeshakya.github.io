@@ -9,7 +9,7 @@ import Skills from '../../components/Skills/Skills';
 import './About.scss';
 import profilePlaceholder from '../../images/profile.jpg';
 
-const About = () => {
+const About = ({ refAbout }) => {
     const descriptionList2 = [
         {
             name: 'birthday',
@@ -41,7 +41,7 @@ const About = () => {
     ];
 
     return (
-        <section id='about' className='sections'>
+        <section id='about' className='sections' ref={refAbout}>
             <article>
                 <h1 className='article-heading'>About</h1>
                 <UnderLine />

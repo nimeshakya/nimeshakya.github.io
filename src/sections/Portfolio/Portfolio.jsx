@@ -10,7 +10,7 @@ import Project from '../../components/Project/Project';
 
 import './Portfolio.scss';
 
-const Portfolio = () => {
+const Portfolio = ({ refPortfolio }) => {
     const projects = [
         {
             name: 'random guote gen',
@@ -51,7 +51,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <section id='portfolio' className='sections'>
+        <section id='portfolio' className='sections' ref={refPortfolio}>
             <h1 className='article-heading section-heading'>Portfolio</h1>
             <UnderLine />
             <p className='section-description'>

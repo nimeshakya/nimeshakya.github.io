@@ -9,7 +9,7 @@ import {
 
 import './Home.scss';
 
-const Home = ({ addMultiRef }) => {
+const Home = ({ refHome }) => {
     const socialLinks = [
         {
             name: 'instagram',
@@ -29,7 +29,7 @@ const Home = ({ addMultiRef }) => {
     ];
 
     return (
-        <section id='home'>
+        <section id='home' ref={refHome}>
             <article>
                 <h1>Nimesh Shakya</h1>
                 <p>
