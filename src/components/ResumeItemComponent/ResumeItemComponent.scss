@@ -24,6 +24,20 @@
         font-family: variables.$font-open-sans;
         font-weight: 400;
     }
+    .resume-item-link {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        font-family: variables.$font-open-sans;
+        font-weight: 400;
+        a {
+            margin-left: 5px;
+            color: variables.$primary-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 
     #address-contacts {
         font-family: variables.$font-open-sans;

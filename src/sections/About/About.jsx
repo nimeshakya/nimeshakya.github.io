@@ -46,19 +46,21 @@ const About = ({ refAbout }) => {
                 <h1 className='article-heading'>About</h1>
                 <UnderLine />
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae asperiores nemo enim, porro aperiam quibusdam adipisci
-                    quaerat provident veritatis tenetur odio laudantium
-                    voluptatum ea obcaecati.
+                    Doodling around with HTML and CSS, it was just a way to pass
+                    some time at the beginning. I was like playing a game.
+                    Further interest in this field led me to this vast world of
+                    web development. I liked how a web page can be so
+                    interactive with small animated buttons, amazing scrolling
+                    features and so on. I also realised how dark internet can be
+                    and understood how important security can be. Just another
+                    web developer in the block, <b>who am I?</b> Her's a little
+                    bit of myself.
                 </p>
                 <div className='description-container'>
                     <img src={profilePlaceholder} alt='profile_placeholder' />
                     <div className='description-texts'>
                         <h2>Frontend Web Developer</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Accusantium, vel!
-                        </p>
+                        <p>First, a litte detail about where I live and all.</p>
                         <div className='description-lists'>
                             <ul>
                                 {descriptionList1.map((item, index) => {
@@ -84,10 +86,10 @@ const About = ({ refAbout }) => {
                             </ul>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Maiores, veritatis excepturi error harum optio
-                            atque? Dolorem dignissimos provident ducimus
-                            excepturi eos obcaecati asperiores maiores natus!
+                            College is quite fun, and I'm learning about
+                            computers in more depth than before and I'm always
+                            amazed at how it evolved to be what it is and what
+                            more it can be.
                         </p>
                     </div>
                 </div>

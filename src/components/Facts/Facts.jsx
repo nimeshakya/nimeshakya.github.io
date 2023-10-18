@@ -35,11 +35,10 @@ const Facts = () => {
             <h1 className='article-heading'>Facts</h1>
             <UnderLine />
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                temporibus modi omnis totam tempore explicabo quas illum et
-                incidunt quis. Nihil odio delectus voluptatibus molestias
-                explicabo debitis aliquam placeat nam recusandae, rem hic earum
-                eligendi voluptatum! Suscipit voluptatem harum quasi!
+                When I'm not doing web development, I do several other things.
+                I'm interested in game development too and constantly learning
+                it making small games like pong and what not. I like making art
+                and listening to music. And then there is food.
             </p>
             <ul>
                 {facts.map((fact, index) => {

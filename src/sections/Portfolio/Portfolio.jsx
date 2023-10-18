@@ -15,7 +15,7 @@ const Portfolio = ({ refPortfolio }) => {
         {
             name: 'random guote gen',
             description:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae incidunt, sint atque eum minima est reprehenderit nobis assumenda ipsa suscipit.',
+                "This project was done as a cource's final project. The course provided an online JSON data with the quotes and we did the API call and to get the quotes.",
             techUsed: ['ReactJS', 'VS Code', 'Netlify'],
             image: imgQuoteGen,
             link: 'https://quote-gen-saucymind.netlify.app/',
@@ -24,8 +24,8 @@ const Portfolio = ({ refPortfolio }) => {
         {
             name: 'landing / coming soon page',
             description:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae incidunt, sint atque eum minima est reprehenderit nobis assumenda ipsa suscipit.',
-            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
+                "This is a 'Coming Soon' page which you deploy before the actual landing page. I wanted to challenge myself to build it with just HTML, CSS and Javascript so that's what I did.",
+            techUsed: ['HTML5', 'CSS3', 'JavaScript', 'Netlify', 'VS Code'],
             image: imgComingSoon,
             link: 'https://beaches-landing.netlify.app/',
             github: 'https://github.com/nimeshakya/frontend-projects.git',
@@ -33,7 +33,7 @@ const Portfolio = ({ refPortfolio }) => {
         {
             name: 'pomodoro timer',
             description:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae incidunt, sint atque eum minima est reprehenderit nobis assumenda ipsa suscipit.',
+                'Here I learnt how time works in JavaScript. I used ReactJS to build this project. This is also one of the final project of the course by freeCodeCamp.',
             techUsed: ['ReactJS', 'VS Code', 'Netlify'],
             image: imgPomodoro,
             link: 'https://the-pomodoro-timer.netlify.app/',
@@ -42,7 +42,7 @@ const Portfolio = ({ refPortfolio }) => {
         {
             name: 'todo app',
             description:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae incidunt, sint atque eum minima est reprehenderit nobis assumenda ipsa suscipit.',
+                'After building several ToDo Apps on the web, I created this one using ReactJS. This project is a demonstration of CRUD functionality and also it is usable too. It stores data is localStorage of the web browser.',
             techUsed: ['ReactJS', 'VS Code', 'Netlify'],
             image: imgTodos,
             link: 'https://stuffies-todo.netlify.app/',

@@ -14,6 +14,18 @@ const ResumeItemComponent = ({ resumeItemComponent }) => {
             <p className='resume-item-p'>
                 {resumeItemComponent.itemDescription}
             </p>
+            {resumeItemComponent.itemLink && (
+                <p className='resume-item-link'>
+                    Link:
+                    <a
+                        href={resumeItemComponent.itemLink}
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        Click here
+                    </a>
+                </p>
+            )}
             {resumeItemComponent.itemLists && (
                 <ul id='address-contacts'>
                     {resumeItemComponent.itemLists.map((item, index) => {
