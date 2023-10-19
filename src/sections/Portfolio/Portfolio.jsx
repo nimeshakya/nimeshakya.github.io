@@ -63,9 +63,15 @@ const Portfolio = ({ refPortfolio }) => {
                     return <Project key={index} project={project} />;
                 })}
                 <p className='section-description'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vero enim ullam, magnam quam exercitationem vitae suscipit
-                    mollitia debitis culpa voluptatibus id odio ab aspernatur.
+                    For more projects, please visit{' '}
+                    <a
+                        href='https://github.com/nimeshakya'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        my github page
+                    </a>{' '}
+                    where you can find all the repositories over there.
                 </p>
             </article>
         </section>
