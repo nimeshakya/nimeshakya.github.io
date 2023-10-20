@@ -33,7 +33,7 @@
             font-size: 1.2rem;
 
             a {
-                color: variables.$primary-color;
+                color: variables.$secondary-color;
 
                 &:hover {
                     text-decoration: underline;
@@ -47,7 +47,7 @@
             background-color: variables.$bg-color;
             border: 3px solid variables.$secondary-color;
             margin: 20px 0;
-            color: variables.$text-color;
+            color: variables.$secondary-color;
             font-family: variables.$font-montserrat;
             font-weight: 500;
 
@@ -80,7 +80,7 @@
                     span {
                         &:nth-child(1) {
                             font-size: 2rem;
-                            color: variables.$primary-color;
+                            color: variables.$secondary-color;
                             padding: 10px;
                             display: flex;
                             justify-content: center;
@@ -104,7 +104,7 @@
                         span {
                             &:nth-child(1) {
                                 color: variables.$bg-color;
-                                background-color: variables.$primary-color;
+                                background-color: variables.$secondary-color;
                             }
                         }
                     }

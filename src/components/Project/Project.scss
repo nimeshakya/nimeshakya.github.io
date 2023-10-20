@@ -105,6 +105,10 @@
 
             a {
                 color: variables.$text-color;
+
+                &:hover {
+                    color: variables.$secondary-color;
+                }
             }
         }
     }
@@ -173,17 +177,36 @@
             max-width: 100%;
             position: relative !important;
             padding: 30px;
-            background-color: #f2f3f5d9;
+            background-color: #242424c7;
+            color: variables.$bg-color;
 
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+            transition: background-color 0.3s linear;
+
+            &:hover {
+                background-color: #39393969;
+            }
 
             .project-description {
                 text-align: left;
                 background: none;
                 padding: 0;
+                color: variables.$bg-color;
+            }
+
+            .project-text {
+                span {
+                    color: variables.$bg-color;
+                }
+            }
+
+            .project-links {
+                a {
+                    color: variables.$bg-color;
+                }
             }
         }
     }

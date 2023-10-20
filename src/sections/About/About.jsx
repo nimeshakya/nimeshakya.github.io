@@ -49,7 +49,7 @@ const About = ({ refAbout }) => {
                     Doodling around with HTML and CSS, it was just a way to pass
                     some time at the beginning. I was like playing a game.
                     Further interest in this field led me to this vast world of
-                    web development. I liked how a web page can be so
+                    web development. It liked how a web page can be so
                     interactive with small animated buttons, amazing scrolling
                     features and so on. I also realised how dark internet can be
                     and understood how important security can be. Just another
