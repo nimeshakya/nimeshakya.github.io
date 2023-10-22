@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 
 import {
@@ -33,7 +34,19 @@ const Home = ({ refHome }) => {
             <article>
                 <h1>Nimesh Shakya</h1>
                 <p>
-                    I'm <span>Frontend Developer</span>
+                    I'm{' '}
+                    <span>
+                        <TypeAnimation
+                            sequence={[
+                                'Frontend Developer',
+                                1000,
+                                'Web Designer',
+                                1000,
+                            ]}
+                            speed={200}
+                            repeat={Infinity}
+                        />
+                    </span>
                 </p>
                 <ul>
                     {socialLinks.map((socialLink, index) => {

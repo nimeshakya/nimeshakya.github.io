@@ -22,7 +22,7 @@ const Portfolio = ({ refPortfolio }) => {
             github: 'https://github.com/nimeshakya/random-quote-generator.git',
         },
         {
-            name: 'landing / coming soon page',
+            name: 'coming soon page',
             description:
                 "This is a 'Coming Soon' page which you deploy before the actual landing page. I wanted to challenge myself to build it with just HTML, CSS and Javascript so that's what I did.",
             techUsed: ['HTML5', 'CSS3', 'JavaScript', 'Netlify', 'VS Code'],

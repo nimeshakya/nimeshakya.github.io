@@ -7,6 +7,10 @@ import './Skills.scss';
 
 const Skills = () => {
     const skills = [
+        'Communication',
+        'Collaboration',
+        'Teamwork',
+        'Research',
         'HTML5',
         'CSS3',
         'TailwindCSS',

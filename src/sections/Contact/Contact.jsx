@@ -50,41 +50,7 @@ const Contact = ({ refContact }) => {
                 >
                     Say Hello!
                 </a>
-                <p>
-                    Send me an{' '}
-                    <a
-                        href='mailto: nimeshakyabtw@gmail.com'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        Email
-                    </a>{' '}
-                    or reach out on{' '}
-                    <a
-                        href='https://www.linkedin.com/in/nimeshakya/'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        LinkedIn
-                    </a>
-                    ,{' '}
-                    <a
-                        href='https://m.me/nimeshakya/'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        Messenger
-                    </a>{' '}
-                    or{' '}
-                    <a
-                        href='https://www.instagram.com/nimeshakya/'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        Instagram
-                    </a>
-                    .
-                </p>
+                <p>Or contact me via:</p>
                 <ul className='contact-links'>
                     {contactLinks.map((link, index) => {
                         return (

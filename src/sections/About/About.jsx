@@ -12,16 +12,12 @@ import profilePlaceholder from '../../images/profile.jpg';
 const About = ({ refAbout }) => {
     const descriptionList2 = [
         {
-            name: 'birthday',
-            value: '27 July 2003',
-        },
-        {
-            name: 'age',
-            value: 20,
-        },
-        {
             name: 'degree',
             value: 'Bachelors in Computer Engineering',
+        },
+        {
+            name: 'soft skills',
+            value: 'Communication, Collaboration, Teamwork, Research',
         },
     ];
 

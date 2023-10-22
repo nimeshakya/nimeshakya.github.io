@@ -6,12 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 175px;
 
     article {
         width: 100%;
         max-width: 1440px;
-        padding-left: 200px;
         color: variables.$text-color;
+        text-align: center;
 
         h1 {
             font-size: 4rem;
@@ -51,6 +52,7 @@
     #home {
         justify-content: center;
         align-items: center;
+        padding: 0;
         article {
             padding: 0;
             text-align: center;
