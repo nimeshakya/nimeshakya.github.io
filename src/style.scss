@@ -13,6 +13,34 @@ html {
     scroll-behavior: smooth;
 }
 
+#root {
+    animation: animateOpacity 0.8s linear;
+}
+
+@keyframes animateOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-sections {
+    animation: translateUp 1s ease-out forwards;
+}
+
+@keyframes translateUp {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-200px);
+    }
+}
+
 #navToggleBtn {
     position: fixed;
     top: 10px;

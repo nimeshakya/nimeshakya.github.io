@@ -13,27 +13,27 @@ const Navigation = ({ toggleNav, refs }) => {
         {
             name: 'home',
             icon: <BiHome />,
-            ref: refs.current[0],
+            ref: refs[0],
         },
         {
             name: 'about',
             icon: <BiUser />,
-            ref: refs.current[1],
+            ref: refs[1],
         },
         {
             name: 'resume',
             icon: <MdOutlineInsertDriveFile />,
-            ref: refs.current[2],
+            ref: refs[2],
         },
         {
             name: 'portfolio',
             icon: <BiBookContent />,
-            ref: refs.current[3],
+            ref: refs[3],
         },
         {
             name: 'contact',
             icon: <MdOutlineEmail />,
-            ref: refs.current[4],
+            ref: refs[4],
         },
     ];
 

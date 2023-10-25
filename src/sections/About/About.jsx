@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
+
 import UnderLine from '../../components/UnderLine/UnderLine';
 import DescriptionItem from '../../components/DescriptionItem/DescriptionItem';
 
@@ -36,8 +38,15 @@ const About = ({ refAbout }) => {
         },
     ];
 
+    const isAboutVisible = useIsVisible(refAbout);
+    console.log(isAboutVisible);
+
     return (
-        <section id='about' className='sections' ref={refAbout}>
+        <section
+            id='about'
+            className={`sections ${isAboutVisible && 'animated-sections'}`}
+            ref={refAbout}
+        >
             <article>
                 <h1 className='article-heading'>About</h1>
                 <UnderLine />

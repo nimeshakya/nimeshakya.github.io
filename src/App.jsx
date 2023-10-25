@@ -1,6 +1,9 @@
 import React, { useState, useRef, createRef } from 'react';
+import { useInViewport } from 'react-in-viewport';
 import { MdClose } from 'react-icons/md';
 import { HiOutlineMenu } from 'react-icons/hi';
+
+import { useIsVisible } from './utils/IsVisible/IsVisible';
 
 import Navigation from './components/Navigation/Navigation';
 import Home from './sections/Home/Home';
@@ -13,14 +16,14 @@ import Footer from './sections/Footer/Footer';
 const App = () => {
     const [toggleNav, setToggleNav] = useState(false);
 
-    const sections = [
-        'sectionHome',
-        'sectionAbout',
-        'sectionResume',
-        'sectionPortfolio',
-        'sectionContact',
-    ];
-    const refs = useRef(sections.map(() => React.createRef()));
+    const refHome = useRef();
+    const refAbout = useRef();
+    const refResume = useRef();
+    const refPortfolio = useRef();
+    const refContact = useRef();
+
+    // const inView = useInViewport(refAbout);
+    // console.log(inView);
 
     return (
         <>
@@ -31,12 +34,15 @@ const App = () => {
             >
                 {toggleNav ? <MdClose /> : <HiOutlineMenu />}
             </div>
-            <Navigation toggleNav={toggleNav} refs={refs} />
-            <Home refHome={refs.current[0]} />
-            <About refAbout={refs.current[1]} />
-            <Resume refResume={refs.current[2]} />
-            <Portfolio refPortfolio={refs.current[3]} />
-            <Contact refContact={refs.current[4]} />
+            <Navigation
+                toggleNav={toggleNav}
+                refs={[refHome, refAbout, refResume, refPortfolio, refContact]}
+            />
+            <Home refHome={refHome} />
+            <About refAbout={refAbout} />
+            <Resume refResume={refResume} />
+            <Portfolio refPortfolio={refPortfolio} />
+            <Contact refContact={refContact} />
             <Footer />
         </>
     );

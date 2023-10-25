@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
+
 import UnderLine from '../../components/UnderLine/UnderLine';
 import ResumeItem from '../../components/ResumeItem/ResumeItem';
 
@@ -67,8 +70,14 @@ const Resume = ({ refResume }) => {
         },
     ];
 
+    const isResumeVisible = useIsVisible(refResume);
+
     return (
-        <section id='resume' ref={refResume}>
+        <section
+            id='resume'
+            className={`${isResumeVisible && 'animated-sections'}`}
+            ref={refResume}
+        >
             <h1 className='section-heading'>Resume</h1>
             <UnderLine />
             <p className='resume-description'>

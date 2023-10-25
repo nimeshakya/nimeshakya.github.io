@@ -34,7 +34,7 @@ const Contact = ({ refContact }) => {
         },
     ];
     return (
-        <section id='contact' ref={refContact}>
+        <section id='contact' className='animated-sections' ref={refContact}>
             <h1 className='section-heading'>Contact</h1>
             <UnderLine />
 
