@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 
 import { IoGameControllerOutline } from 'react-icons/io5';
 import { BsBrush } from 'react-icons/bs';
@@ -29,9 +31,15 @@ const Facts = () => {
             icon: <MdOutlineFastfood />,
         },
     ];
+    const factsRef = useRef();
+    const isFactsVisible = useIsVisible(factsRef);
 
     return (
-        <article id='facts'>
+        <article
+            id='facts'
+            ref={factsRef}
+            className={isFactsVisible && 'animated-projects'}
+        >
             <h1 className='article-heading'>Facts</h1>
             <UnderLine />
             <p>

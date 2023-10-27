@@ -1,6 +1,7 @@
 @use '../../variables';
 
 #facts {
+    transform: translateY(200px);
     ul {
         width: 100%;
         display: flex;

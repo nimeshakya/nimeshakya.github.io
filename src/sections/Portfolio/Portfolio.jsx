@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
+
 import imgQuoteGen from '../../images/quotes.png';
 import imgComingSoon from '../../images/comingsoon.png';
 import imgPomodoro from '../../images/pomodoro.png';
@@ -50,10 +52,12 @@ const Portfolio = ({ refPortfolio }) => {
         },
     ];
 
+    const isPortfolioVisible = useIsVisible(refPortfolio);
+
     return (
         <section
             id='portfolio'
-            className='sections animated-sections'
+            className={`sections ${isPortfolioVisible && 'animated-sections'}`}
             ref={refPortfolio}
         >
             <h1 className='article-heading section-heading'>Portfolio</h1>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
     BiEnvelope,
     BiLogoLinkedin,
@@ -6,11 +6,14 @@ import {
     BiLogoInstagram,
 } from 'react-icons/bi';
 
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 import UnderLine from '../../components/UnderLine/UnderLine';
 
 import './Contact.scss';
 
 const Contact = ({ refContact }) => {
+    const isContactVisible = useIsVisible(refContact);
+
     const contactLinks = [
         {
             name: 'email',
@@ -34,7 +37,11 @@ const Contact = ({ refContact }) => {
         },
     ];
     return (
-        <section id='contact' className='animated-sections' ref={refContact}>
+        <section
+            id='contact'
+            className={isContactVisible && 'animated-projects'}
+            ref={refContact}
+        >
             <h1 className='section-heading'>Contact</h1>
             <UnderLine />
 

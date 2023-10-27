@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { RxTriangleRight } from 'react-icons/rx';
+
+import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 
 import UnderLine from '../UnderLine/UnderLine';
 
@@ -19,8 +21,15 @@ const Skills = () => {
         'ReactJS',
     ];
 
+    const skillsRef = useRef();
+    const isSkillsVisible = useIsVisible(skillsRef);
+
     return (
-        <article id='skills'>
+        <article
+            id='skills'
+            className={isSkillsVisible && 'animated-projects'}
+            ref={skillsRef}
+        >
             <h1 className='article-heading'>Skills</h1>
             <UnderLine />
             <p>
