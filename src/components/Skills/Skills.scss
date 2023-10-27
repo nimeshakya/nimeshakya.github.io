@@ -42,7 +42,7 @@
         ul {
             li {
                 width: 50%;
-                flex: 25%;
+                flex: 50%;
                 span {
                     &:nth-child(2) {
                         font-size: 1rem;
@@ -56,10 +56,10 @@
 @media screen and (max-width: 630px) {
     #skills {
         ul {
-            flex-wrap: nowrap;
             max-height: none;
+            align-items: center;
             li {
-                width: 100%;
+                width: 50%;
                 flex: 100%;
                 margin: 10px 0;
                 span {
