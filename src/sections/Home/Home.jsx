@@ -40,7 +40,7 @@ const Home = ({ refHome }) => {
                             sequence={[
                                 'Frontend Developer',
                                 1000,
-                                'Web Designer',
+                                'Web Developer',
                                 1000,
                             ]}
                             speed={200}
