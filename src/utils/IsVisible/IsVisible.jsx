@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
 export const useIsVisible = (ref) => {
-    const [isIntersecting, setIsIntersecting] = useState(false);
+    const [inView, setInView] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsIntersecting(entry.isIntersecting);
+            ([entry], obs) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                    obs.disconnect();
+                }
             },
             { rootMargin: '0px 0px 150px 0px' }
         );
         observer.observe(ref.current);
 
         return () => {
-            observer.unobserve(ref.current);
             observer.disconnect();
         };
     }, [ref]);
 
-    return isIntersecting;
+    return inView;
 };
