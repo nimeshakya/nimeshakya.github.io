@@ -18,16 +18,12 @@ const About = ({ refAbout }) => {
             value: 'Bachelors in Computer Engineering',
         },
         {
-            name: 'soft skills',
-            value: 'Communication, Collaboration, Teamwork, Research',
+            name: 'city',
+            value: 'Bhaktapur, Nepal',
         },
     ];
 
     const descriptionList1 = [
-        {
-            name: 'city',
-            value: 'Bhaktapur, Nepal',
-        },
         {
             name: 'phone',
             value: '+977 9869862900',
@@ -52,14 +48,14 @@ const About = ({ refAbout }) => {
                 <UnderLine />
                 <p>
                     Doodling around with HTML and CSS, it was just a way to pass
-                    some time at the beginning. I was like playing a game.
+                    some time at the beginning. It was like playing a game.
                     Further interest in this field led me to this vast world of
-                    web development. It liked how a web page can be so
+                    web development. I liked how a web page can be so
                     interactive with small animated buttons, amazing scrolling
-                    features and so on. I also realised how dark internet can be
-                    and understood how important security can be. Just another
-                    web developer in the block, <b>who am I?</b> Her's a little
-                    bit of myself.
+                    features and so on. I also realised how dark the internet
+                    can be and understood how important security is.
+                    <br /> Just another web developer in the block,{' '}
+                    <b>who am I?</b> Here's a little bit of myself.
                 </p>
                 <div className='description-container'>
                     <img src={profilePlaceholder} alt='profile_placeholder' />
