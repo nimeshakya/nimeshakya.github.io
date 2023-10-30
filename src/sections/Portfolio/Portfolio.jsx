@@ -15,15 +15,6 @@ import './Portfolio.scss';
 const Portfolio = ({ refPortfolio }) => {
     const projects = [
         {
-            name: 'random guote gen',
-            description:
-                "This project was done as a cource's final project. The course provided an online JSON data with the quotes and we did the API call and to get the quotes.",
-            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
-            image: imgQuoteGen,
-            link: 'https://quote-gen-saucymind.netlify.app/',
-            github: 'https://github.com/nimeshakya/random-quote-generator.git',
-        },
-        {
             name: 'coming soon page',
             description:
                 "This is a 'Coming Soon' page which you deploy before the actual landing page. I wanted to challenge myself to build it with just HTML, CSS and Javascript so that's what I did.",
@@ -33,22 +24,31 @@ const Portfolio = ({ refPortfolio }) => {
             github: 'https://github.com/nimeshakya/frontend-projects.git',
         },
         {
-            name: 'pomodoro timer',
-            description:
-                'Here I learnt how time works in JavaScript. I used ReactJS to build this project. This is also one of the final project of the course by freeCodeCamp.',
-            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
-            image: imgPomodoro,
-            link: 'https://the-pomodoro-timer.netlify.app/',
-            github: 'https://github.com/nimeshakya/pomodoro_timer.git',
-        },
-        {
             name: 'todo app',
             description:
-                'After building several ToDo Apps on the web, I created this one using ReactJS. This project is a demonstration of CRUD functionality and also it is usable too. It stores data is localStorage of the web browser.',
+                'After building several ToDo Apps on the web, I created this one using ReactJS. This project is a demonstration of CRUD functionality and it is usable as well. It stores the data in localStorage of the web browser.',
             techUsed: ['ReactJS', 'VS Code', 'Netlify'],
             image: imgTodos,
             link: 'https://stuffies-todo.netlify.app/',
             github: 'https://github.com/nimeshakya/frontend-projects.git',
+        },
+        {
+            name: 'random guote gen',
+            description:
+                "This project was done as a course's final project. The course provided an online JSON data with the quotes and we did the API call to get the quotes.",
+            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
+            image: imgQuoteGen,
+            link: 'https://quote-gen-saucymind.netlify.app/',
+            github: 'https://github.com/nimeshakya/random-quote-generator.git',
+        },
+        {
+            name: 'pomodoro timer',
+            description:
+                'Here I learnt how the time works in JavaScript. I used ReactJS to build this project. This is also one of the final project of the course by freeCodeCamp.',
+            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
+            image: imgPomodoro,
+            link: 'https://the-pomodoro-timer.netlify.app/',
+            github: 'https://github.com/nimeshakya/pomodoro_timer.git',
         },
     ];
 
@@ -79,7 +79,7 @@ const Portfolio = ({ refPortfolio }) => {
                     >
                         my github page
                     </a>{' '}
-                    where you can find all the repositories over there.
+                    where you can find all the repositories.
                 </p>
             </article>
         </section>
