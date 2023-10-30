@@ -46,9 +46,7 @@ const Contact = ({ refContact }) => {
             <UnderLine />
 
             <div className='contact-info-container'>
-                <p>
-                    Looking for a good frontend developer to build your website?
-                </p>
+                <p>For any futher queries and collaboration offers:</p>
                 <a
                     href='mailto: nimeshakyabtw@gmail.com'
                     target='_blank'
