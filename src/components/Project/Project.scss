@@ -7,9 +7,10 @@
     align-items: center;
     position: relative;
     margin: 50px 0;
-    transform: translateY(200px);
+    opacity: 0;
 
     &:nth-child(even) {
+        transform: translateX(100%);
         flex-direction: row-reverse;
         .project-description-container {
             text-align: left;
@@ -39,6 +40,7 @@
     }
 
     &:nth-child(odd) {
+        transform: translateX(-100%);
         flex-direction: row;
         .project-description-container {
             text-align: right;
@@ -126,6 +128,10 @@
             filter: saturate(1);
         }
     }
+}
+
+.slide-in {
+    transform: translateX(0px);
 }
 
 @media screen and (max-width: 1200px) {

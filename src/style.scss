@@ -56,6 +56,34 @@ html {
     }
 }
 
+.animated-projects-odd {
+    animation: translateProjectRight 1s ease-out forwards;
+}
+.animated-projects-even {
+    animation: translateProjectLeft 1s ease-out forwards;
+}
+
+@keyframes translateProjectLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes translateProjectRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 #navToggleBtn {
     position: fixed;
     top: 10px;

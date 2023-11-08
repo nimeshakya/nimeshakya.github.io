@@ -7,14 +7,19 @@ import projectImg from '../../images/quotes.png';
 
 import './Project.scss';
 
-const Project = ({ project }) => {
+const Project = ({ project, index }) => {
     const projectRef = useRef();
     const isProjectVisible = useIsVisible(projectRef);
 
+    console.log(isProjectVisible);
     return (
         <div
             className={`project-container ${
-                isProjectVisible && 'animated-projects'
+                isProjectVisible
+                    ? index % 2 === 0
+                        ? 'animated-projects-even'
+                        : 'animated-projects-odd'
+                    : ''
             }`}
             ref={projectRef}
         >

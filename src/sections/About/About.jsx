@@ -35,7 +35,6 @@ const About = ({ refAbout }) => {
     ];
 
     const isAboutVisible = useIsVisible(refAbout);
-    console.log(isAboutVisible);
 
     return (
         <section

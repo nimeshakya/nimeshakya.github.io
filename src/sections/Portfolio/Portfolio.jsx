@@ -68,7 +68,9 @@ const Portfolio = ({ refPortfolio }) => {
             </p>
             <article>
                 {projects.map((project, index) => {
-                    return <Project key={index} project={project} />;
+                    return (
+                        <Project key={index} project={project} index={index} />
+                    );
                 })}
                 <p className='section-description'>
                     For more projects, please visit{' '}

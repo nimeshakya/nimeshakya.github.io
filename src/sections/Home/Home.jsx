@@ -40,10 +40,9 @@ const Home = ({ refHome }) => {
                             sequence={[
                                 'Frontend Developer',
                                 1000,
-                                'Web Developer',
+                                'Web Programmer',
                                 1000,
                             ]}
-                            speed={200}
                             repeat={Infinity}
                         />
                     </span>
