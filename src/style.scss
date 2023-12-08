@@ -42,7 +42,7 @@ html {
 }
 
 .animated-projects {
-    animation: translateProjectsUp 1s ease-out forwards;
+    animation: translateProjectsUp 1.5s ease-out forwards;
 }
 
 @keyframes translateProjectsUp {
@@ -57,7 +57,7 @@ html {
 }
 
 .animated-projects-odd {
-    animation: translateProjectRight 1s ease-out forwards;
+    animation: translateProjectRight 1.5s ease-out forwards;
 }
 .animated-projects-even {
     animation: translateProjectLeft 1s ease-out forwards;
