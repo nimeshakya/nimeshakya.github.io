@@ -32,7 +32,7 @@ const Home = ({ refHome }) => {
     return (
         <section id='home' ref={refHome}>
             <article>
-                <h1>Jina Shakya</h1>
+                <h1>Nimesh Shakya</h1>
                 <p>
                     I'm{' '}
                     <span>
