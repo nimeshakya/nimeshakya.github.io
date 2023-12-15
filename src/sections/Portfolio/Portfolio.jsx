@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 
-import imgQuoteGen from '../../images/quotes.png';
+import imgWeather from '../../images/weather.png';
 import imgComingSoon from '../../images/comingsoon.png';
 import imgPomodoro from '../../images/pomodoro.png';
 import imgTodos from '../../images/todos.png';
@@ -14,6 +14,15 @@ import './Portfolio.scss';
 
 const Portfolio = ({ refPortfolio }) => {
     const projects = [
+        {
+            name: 'weather app',
+            description:
+                'This project was a way for me to learn about fetching data from an online API. I used axios to do the fetching from an online api provider: www.weatherapi.com',
+            techUsed: ['ReactJS', 'SCSS', 'Axios', 'VS Code', 'WeatherAPI'],
+            image: imgWeather,
+            link: 'https://my-weatherinfo.netlify.app/',
+            github: 'https://github.com/nimeshakya/weather-app.git',
+        },
         {
             name: 'coming soon page',
             description:
@@ -31,15 +40,6 @@ const Portfolio = ({ refPortfolio }) => {
             image: imgTodos,
             link: 'https://stuffies-todo.netlify.app/',
             github: 'https://github.com/nimeshakya/frontend-projects.git',
-        },
-        {
-            name: 'random guote gen',
-            description:
-                "This project was done as a course's final project. The course provided an online JSON data with the quotes and we did the API call to get the quotes.",
-            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
-            image: imgQuoteGen,
-            link: 'https://quote-gen-saucymind.netlify.app/',
-            github: 'https://github.com/nimeshakya/random-quote-generator.git',
         },
         {
             name: 'pomodoro timer',

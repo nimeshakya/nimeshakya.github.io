@@ -18,6 +18,8 @@
             left: 0;
 
             .project-text {
+                max-width: 75% !important;
+
                 &:nth-child(4) {
                     span {
                         margin-right: 20px;
@@ -46,8 +48,13 @@
             text-align: right;
             position: absolute;
             right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
 
             .project-text {
+                max-width: 75% !important;
+
                 &:nth-child(4) {
                     span {
                         margin-left: 20px;
