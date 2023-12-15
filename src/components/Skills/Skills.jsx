@@ -27,7 +27,7 @@ const Skills = () => {
     return (
         <article
             id='skills'
-            className={isSkillsVisible && 'animated-projects'}
+            className={isSkillsVisible ? 'animated-projects' : ''}
             ref={skillsRef}
         >
             <h1 className='article-heading'>Skills</h1>

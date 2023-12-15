@@ -11,7 +11,6 @@ const Project = ({ project, index }) => {
     const projectRef = useRef();
     const isProjectVisible = useIsVisible(projectRef);
 
-    console.log(isProjectVisible);
     return (
         <div
             className={`project-container ${
@@ -38,10 +37,10 @@ const Project = ({ project, index }) => {
                     })}
                 </p>
                 <p className='project-links'>
-                    <a href={project.github}>
+                    <a href={project.github} target='_blank' rel='noreferrer'>
                         <BiLogoGithub />
                     </a>
-                    <a href={project.link}>
+                    <a href={project.link} target='_blank' rel='noreferrer'>
                         <BiLinkExternal />
                     </a>
                 </p>

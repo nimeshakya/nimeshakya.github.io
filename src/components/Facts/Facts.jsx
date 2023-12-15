@@ -38,7 +38,7 @@ const Facts = () => {
         <article
             id='facts'
             ref={factsRef}
-            className={isFactsVisible && 'animated-projects'}
+            className={isFactsVisible ? 'animated-projects' : ''}
         >
             <h1 className='article-heading'>Facts</h1>
             <UnderLine />

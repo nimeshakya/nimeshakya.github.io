@@ -39,7 +39,7 @@ const Contact = ({ refContact }) => {
     return (
         <section
             id='contact'
-            className={isContactVisible && 'animated-projects'}
+            className={isContactVisible ? 'animated-projects' : ''}
             ref={refContact}
         >
             <h1 className='section-heading'>Contact</h1>

@@ -39,7 +39,7 @@ const About = ({ refAbout }) => {
     return (
         <section
             id='about'
-            className={`sections ${isAboutVisible && 'animated-sections'}`}
+            className={`sections ${isAboutVisible ? 'animated-sections' : ''}`}
             ref={refAbout}
         >
             <article>
