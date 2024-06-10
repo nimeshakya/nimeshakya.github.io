@@ -4,8 +4,8 @@ import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 
 import imgWeather from '../../images/weather.png';
 import imgComingSoon from '../../images/comingsoon.png';
-import imgPomodoro from '../../images/pomodoro.png';
 import imgTodos from '../../images/todos.png';
+import imgLetterboxd from '../../images/letterboxd.png';
 
 import UnderLine from '../../components/UnderLine/UnderLine';
 import Project from '../../components/Project/Project';
@@ -14,6 +14,15 @@ import './Portfolio.scss';
 
 const Portfolio = ({ refPortfolio }) => {
     const projects = [
+        {
+            name: 'letterboxd site clone',
+            description:
+                'This is a frontend for a website called Letterboxd. Used ReactJS with SCSS and in this project I challenged myself to code all styling by myself without using external libraries.',
+            techUsed: ['ReactJS', 'SCSS', 'Netlify'],
+            image: imgLetterboxd,
+            link: 'https://my-letterboxd.netlify.app/',
+            github: 'https://github.com/nimeshakya/letterboxd-site-clone.git',
+        },
         {
             name: 'weather app',
             description:
@@ -40,15 +49,6 @@ const Portfolio = ({ refPortfolio }) => {
             image: imgTodos,
             link: 'https://stuffies-todo.netlify.app/',
             github: 'https://github.com/nimeshakya/frontend-projects.git',
-        },
-        {
-            name: 'pomodoro timer',
-            description:
-                'Here I learnt how the time works in JavaScript. I used ReactJS to build this project. This is also one of the final project of the course by freeCodeCamp.',
-            techUsed: ['ReactJS', 'VS Code', 'Netlify'],
-            image: imgPomodoro,
-            link: 'https://the-pomodoro-timer.netlify.app/',
-            github: 'https://github.com/nimeshakya/pomodoro_timer.git',
         },
     ];
 
