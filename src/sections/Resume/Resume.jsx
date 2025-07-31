@@ -5,8 +5,6 @@ import { useIsVisible } from '../../utils/IsVisible/IsVisible';
 import UnderLine from '../../components/UnderLine/UnderLine';
 import ResumeItem from '../../components/ResumeItem/ResumeItem';
 
-import ResumePDF from '../../download-files/resume.pdf';
-
 import './Resume.scss';
 
 const Resume = ({ refResume }) => {
@@ -87,7 +85,7 @@ const Resume = ({ refResume }) => {
             </p>
             <p className='resume-description'>
                 You can find a pdf copy of this resume here:{' '}
-                <a href={ResumePDF} target='_blank' rel='noreferrer'>
+                <a href={'resume.pdf'} target='_blank' rel='noreferrer'>
                     resume.pdf
                 </a>
             </p>
